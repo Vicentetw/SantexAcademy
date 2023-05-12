@@ -11,14 +11,24 @@ html {
 .mynavbar{
     display: flex;
     border-bottom: 1px solid gray; 
-    padding: 14px 800px;
+    padding: 0px 80px;
     justify-content: space-between;
+    background-color: aquamarine;
+    height: 80px;
+    
 }
 .navbar-right{
     display: flex;
     align-items: center;
+    
+    
+    
 }
+.navbar-left{
+    display: flex;
 
+    
+}
 p {
     margin-right: 2em;
     font-weight: bold;
@@ -28,7 +38,7 @@ p {
 
 button {
     background-color: white;
-    border-radius: 30px;
+    border-radius: 32px;
     padding: 0px 1.5em;
     height: 2.5em;
     border: 2px solid black;
