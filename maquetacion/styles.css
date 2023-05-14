@@ -3,7 +3,7 @@
 
 html {
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 .mybody{
     margin: 0;
@@ -11,11 +11,14 @@ html {
 .mynavbar{
     display: flex;
     border-bottom: 1px solid gray; 
-    padding: 0px 80px;
+    padding: 0px 185px;
     justify-content: space-between;
     background-color: aquamarine;
     height: 80px;
-    
+ .logo{
+    height: 40px;
+    width: 142px;
+ }   
 }
 .navbar-right{
     display: flex;
@@ -26,8 +29,8 @@ html {
 }
 .navbar-left{
     display: flex;
-
-    
+    float: left;
+    box-sizing: border-box;
 }
 p {
     margin-right: 2em;
@@ -47,7 +50,7 @@ button {
 }
 
 div#navbar-left img {
-    width: 8em;
+    width: 10em;
 }
 .fusion-logo{
     display: block;
