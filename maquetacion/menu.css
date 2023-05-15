@@ -16,7 +16,8 @@ body{
      justify-content: center;
      align-items: center;
      transition: .5s;
-     z-index: 10;
+     z-index: 9999;
+     
    }
    
    .menu-line1{
@@ -60,6 +61,7 @@ body{
    .nav-page1{
      position: fixed ;
      align-items: flex-start;
+     z-index: 9998;
      top:0 ;
      left: 0;
      background: whitesmoke;
@@ -70,8 +72,9 @@ body{
      justify-content: center;
      align-items: center;
      color: #212121;
-     transform: translate(0,-100%);
-     transition: .5s;
+     transform: translate(110%,-100%);
+     width: -webkit-fill-available;
+     transition: .1s;
    }
    .nav-page1 span{
      padding: 1rem;

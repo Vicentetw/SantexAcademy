@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="menu.css">
+    
 </head>
 <body class="mybody">
     <div id="navbar" class="mynavbar">
@@ -60,25 +61,95 @@ $('.menu-line3').classList.toggle('rotate3')
 
 }
     </script>
+       <!-- <div class="img-fondo"></div> -->
+       <div class="contenedor">
+        <div class="contenido somos-text">
+          
+          <p>Somos una Fundación dedicada a mejorar <br>
+             la calidad de vida de las personas y su <br>
+              entorno, a través de la tecnología.</p>
+              <div>
+              <button class="button-contacto">Contactanos -></button>
+              <button class="button-contacto button-blue">Sumate +</button>
+              </div>
+              
+        </div>
+        <div class="contenido somos-text second-text">
+          <div><p>Buscamos construir alianzas y fortalecer vínculos para<br>
+                 generar una transformación real en la comunidad.<br>
+                 Trabajamos para acercar la tecnología innovadora y <br>
+                 disruptiva del sector privado hacia el sector social.</p>
+          </div>
+          <div>
+            <div class="columnas">
+                <div class="columna">
+                  <h2>Localidades</h2>
+                  <p><span id="contador-localidades">0</span>+</p>
+                </div>
+                <div class="columna">
+                  <h2>Mentores</h2>
+                  <p><span id="contador-mentores">0</span></p>
+                </div>
+                <div class="columna">
+                  <h2>Participantes</h2>
+                  <p><span id="contador-participantes">0</span></p>
+                </div>
+              </div>
+              
+          </div>
+            <!-- contador-->
+            <script>function animateContador(id, start, end, duration) {
+                let current = start;
+                const increment = Math.ceil((end - start) / duration * 10);
+              
+                const timer = setInterval(function() {
+                  current += increment;
+                  document.getElementById(id).textContent = current;
+              
+                  if (current >= end) {
+                    clearInterval(timer);
+                  }
+                }, 10);
+              }
+              
+              window.addEventListener('load', function() {
+                animateContador('contador-localidades', 0, 50, 2000);
+                animateContador('contador-mentores', 0, 301, 3000);
+                animateContador('contador-participantes', 0, 58, 2500);
+              });
+              </script>
+            
+            <!-- fin contador-->
+                
+                
+          </div>
+        <div id="contact-form">
+            <form class="form-contact" action="">
+                <div>
+                    <input type="text" placeholder="Nombre y Apellido">
+                    <input type="email" placeholder="Email">
+                    <select name="" id="">
+                        <option value="">Programas</option>
+                        <option value="">Capacitaciones</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea name="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+
+      </div>
+
+
+       
         
 
-    <div id="contact-form">
-        <form class="form-contact" action="">
-            <div>
-                <input type="text" placeholder="Nombre y Apellido">
-                <input type="email" placeholder="Email">
-                <select name="" id="">
-                    <option value="">Programas</option>
-                    <option value="">Capacitaciones</option>
-                </select>
-            </div>
-            <div>
-                <textarea name="" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <button>Enviar</button>
-            </div>
-        </form>
-    </div>
+
+
+    
 </body>
 </html>
