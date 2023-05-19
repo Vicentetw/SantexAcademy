@@ -20,7 +20,7 @@
   <div id="navbar" class="mynavbar">
     <div id="navbar-left" class="navbar-left">
       <a href="index.html"><img src="technology-with-purpose.svg" class="logo"></a>
-      
+
     </div>
     <div id="navbar-right" class="navbar-right">
       <p><a href="nosotros.html" class="enlace">Nosotros</a></p>
@@ -82,91 +82,126 @@
       </div>
 
     </div>
-    <div class="container2"> 
-      
+    <div class="container2">
+
       <div class="div1 second-text">
         <div class="centrado">
-         
-          <div>
-            <p class="impacto">.Impacto</p>
-            <p class="alianzas">Buscamos construir alianzas y fortalecer vínculos para<br>
-          generar una transformación real en la comunidad.<br>
-          Trabajamos para acercar la tecnología innovadora y <br>
-          disruptiva del sector privado hacia el sector social.</p>
+
+          <div class="informacion">
+            <p id="titulo">.Impacto</p>
+            <p id="alianzas">Buscamos construir alianzas y fortalecer vínculos para<br>
+              generar una transformación real en la comunidad.<br>
+              Trabajamos para acercar la tecnología innovadora y <br>
+              disruptiva del sector privado hacia el sector social.</p>
+          </div>
         </div>
+      </div>
+
+      <div class="div2 second-text">
+        <div class="centrado">
+          <div class="columnas">
+            <div class="columna num-size">
+              <h2>Localidades</h2>
+              <p><span id="contador-localidades">0</span></p>
+            </div>
+            <div class="columna num-size">
+              <h2>Mentores</h2>
+              <p><span class="signo-mas">+</span><span id="contador-mentores">0</span></p>
+            </div>
+            <div class="columna num-size">
+              <h2>Participantes</h2>
+              <p><span id="contador-participantes">0</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contador-->
+    <script>function animateContador(id, start, end, duration) {
+        let current = start;
+        const increment = Math.ceil((end - start) / duration * 10);
+
+        const timer = setInterval(function () {
+          current += increment;
+          document.getElementById(id).textContent = current;
+
+          if (current >= end) {
+            clearInterval(timer);
+          }
+        }, 10);
+      }
+
+      window.addEventListener('load', function () {
+        animateContador('contador-localidades', 0, 58, 2000);
+        animateContador('contador-mentores', 0, 50, 3000);
+        animateContador('contador-participantes', 1, 301, 2500);
+      });
+    </script>
+
+    <!-- fin contador-->
+    <!-- Div vacío-->
+    <div class="contenedor">
+      <div class="contenido somos-text contenido-vacio">
+
+
+
+      </div>
+      <!--fin Div Vacío-->
+
+      <!--inicio programas************************************************************-->
+      <!--title*********************************-->
+      <div class="section-title">
+        <div class="content-title">
+          <p class="title">.Programas</p>
+
+        </div>
+      </div>
+
+      <!--fin title*****************************-->
+      <div class="program-section">
+        <div class="program-right">
+        <img src="images/xacademy.jpg" class="img-rounded">
+      </div>
+      <div class="program-left">
+        <div class="contenido somos-text programas">
+
+          <p>xAcademy es un programa de formación en tecnología llevado adelante 
+            por la Fundación Tecnología con Propósito junto a Santex que busca 
+            promover un cambio positivo en la comunidad a través de la educación
+            en IT, apuntando a lograr la inserción laboral de personas en el mundo
+            tecnológico.</p>
+          <div>
+            <button class="button-contacto">Mas info -></button>
+
+          </div>
+
         </div>
       </div>
       
-      <div class="div2 second-text">
-        <div class="centrado">
-        <div class="columnas">
-          <div class="columna num-size">
-            <h2>Localidades</h2>
-            <p><span id="contador-localidades">0</span></p>
-          </div>
-          <div class="columna num-size">
-            <h2>Mentores</h2>
-            <p><span class="signo-mas">+</span><span id="contador-mentores">0</span></p>
-          </div>
-          <div class="columna num-size">
-            <h2>Participantes</h2>
-            <p><span id="contador-participantes">0</span></p>
-          </div>
-        </div>
-      </div>
-      </div>
     </div>
-            <!-- contador-->
-      <script>function animateContador(id, start, end, duration) {
-          let current = start;
-          const increment = Math.ceil((end - start) / duration * 10);
 
-          const timer = setInterval(function () {
-            current += increment;
-            document.getElementById(id).textContent = current;
+      <!--fin programas***************************************************************-->
 
-            if (current >= end) {
-              clearInterval(timer);
-            }
-          }, 10);
-        }
-
-        window.addEventListener('load', function () {
-          animateContador('contador-localidades', 0, 58, 2000);
-          animateContador('contador-mentores', 0, 50, 3000);
-          animateContador('contador-participantes', 1, 301, 2500);
-        });
-      </script>
-
-      <!-- fin contador-->
-<!-- Div vacío-->
-<div class="contenedor">
-  <div class="contenido somos-text contenido-vacio">
-
-     
-
-  </div>
-<!--fin Div Vacío-->
-   <!-- inicio formulario-->
-   <div id="contact-form">
-    <form class="form-contact" action="">
-      <div>
-        <input type="text" placeholder="Nombre y Apellido">
-        <input type="email" placeholder="Email">
-        <select name="" id="">
-          <option value="">Programas</option>
-          <option value="">Capacitaciones</option>
-        </select>
+      <!-- inicio formulario-->
+      <div id="contact-form">
+        <form class="form-contact" action="">
+          <div>
+            <input type="text" placeholder="Nombre y Apellido">
+            <input type="email" placeholder="Email">
+            <select name="" id="">
+              <option value="">Programas</option>
+              <option value="">Capacitaciones</option>
+            </select>
+          </div>
+          <div>
+            <textarea name="" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <button>Enviar</button>
+          </div>
+        </form>
       </div>
-      <div>
-        <textarea name="" cols="30" rows="10"></textarea>
-      </div>
-      <div>
-        <button>Enviar</button>
-      </div>
-    </form>
-  </div>
-<!-- inicio formulario-->
+      <!-- inicio formulario-->
     </div>
 
   </div>
