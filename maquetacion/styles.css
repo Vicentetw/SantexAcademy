@@ -311,6 +311,33 @@ body {
     margin: 0 300px;
 }
 
+/*seccion programas*/
+.program-section{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding: 0 8%;
+    }
+    .section-title{
+        height: 100px;
+        background-color: white;
+        padding: 10px;
+    }
+    .program-right{
+        float:left;
+        display: contents;
+    }
+    .program-left{
+        float: right;
+    }
+    /*fin seccion programas*/
+
+
+
+
+
+
 @media (width < 1100px) {
     .navbar-right {
         display: none;
@@ -405,15 +432,30 @@ padding: 0 8%;
 .section-title{
     height: 100px;
     background-color: white;
-    border-block-color: red;
     padding: 10px;
 }
 .program-right{
     float:left;
     display: contents;
+    font-weight: 300;
 }
 .program-left{
     float: right;
+    font-size: 0.6em;
+}
+.button-contacto {
+    font-size: 0.7em;
+}
+.img-rounded {
+    
+    
+    z-index: 1;
+    position: relative;
+    vertical-align: middle;
+    max-width: 46%;
+    line-height: 1;
+    margin-left: 5em;
+    display: flex;
 }
 /*fin seccion programas*/
 
