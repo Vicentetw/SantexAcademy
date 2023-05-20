@@ -334,9 +334,15 @@ body {
     /*fin seccion programas*/
 
 
+ 
 
 
+    @media (width < 500px) {
+        .contenedor p {
+            font-size: 0.6em;
+            }
 
+    }
 
 @media (width < 1100px) {
     .navbar-right {
@@ -513,3 +519,31 @@ div#navbar-left img {
         padding:  48px 148px;
        }
 }}
+
+  /*resolucion menor a 470 */
+  @media (width < 470px) {
+    .contenido{
+    height: 193px;
+          
+    }
+    .contenedor p {
+        font-size: 0.8em;
+        padding: 0em 2em;
+
+     }
+     .somos-text{
+        padding: 52px 3px;
+        font-size: 1.8em;
+     }
+      .button-contacto{
+        font-size: 0.5em;
+
+}
+.mynavbar {
+padding: 0px 5px;
+
+
+}
+
+}
+ /*fin resolucion 470*/  
